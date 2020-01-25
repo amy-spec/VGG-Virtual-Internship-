@@ -3,23 +3,101 @@
 	margin: 0px;
 }
 body{
-	background-color: brown;
+	background-color: ;
 
 }
-form{
+h1{
 	text-align: center;
-	background-color: orange;
+	color: #880e45;
+	margin-top: 50px;
+	font-family: cursive;
+	font-style: italic;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+#subscribe{
+	display: block;
+	color: #880e45;
+	text-align: center;
+	font-family: courier;
+	margin: 5px;
+}
+span{
+	color: #880e45;
+}
+#container{
+	display: flex;
+	flex-direction: row;
+	margin: 0px auto;
+	margin-top: 6%;
+	height: 70vh;
+	width: 75vw;
+}
+#item{
+	height: 65vh;
+	width: 40vw;
+	background-color: #edbef0;
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 3;
+	color: #c51162;
+	font-family: courier;
+	font-style: italic;
+}
+p{
 	margin-top: 10%;
-	margin-right: 20%;
-	margin-left: 20%;
-	padding: 3%;
-	border: 30px solid black;
+}
+form{
+	padding-top: 8%;
+	padding-left: 3%;
+	height: 63vh;
+	width: 40vw;
+}
+@media screen and (min-width: 700px){
+	form{padding-top: 45px;
+
+}
+p{
+	margin-top: 70px;
+}
+
+}
+@media screen and (max-width:600px){
+	#item{
+		display: none;
+	}
+	form{
+		width: 80vw;
+	}
+	#subscribe{
+		display: block;
+	}
 }
 input{
 	margin-top: 1%;
-	margin-bottom: 3%;
+	margin-bottom: 5%;
 	padding: 2%;
-	border: 3px solid brown;
+	border: 2px solid #512e5f;
+	border-radius: 50px;
+	transition: border 0.5s, padding 0.5s;
+	width:80%;
+}
+input:hover {
+	border: 4px solid #c51162;
+	padding: 3%;
+}
+button{
+	border: 2px solid #512e5f;
+	border-radius: 50px;
+	transition: background-color 0.5s, padding 0.5s;
+	width:85%;
+	background-color: #edbef0; 
+	margin-top: 5%;
+	padding: 2%;
+}
+button:hover{
+	background-color: #c51162;
+	padding: 4%;
 }
 div#general{
 	margin-top:3%;
