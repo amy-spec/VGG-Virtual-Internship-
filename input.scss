@@ -1,27 +1,33 @@
+$main-color: #880e45;
+$other-color:  #c51162;
+$border-color: #512e5f;
+$background-color:  #edbef0;
+$font-family1: cursive;
+$font-family2: courier;
+
 *{
 	padding: 0px;
 	margin: 0px;
 }
 
-}
 h1{
 	text-align: center;
-	color: #880e45;
+	color: $main-color;
 	margin-top: 50px;
-	font-family: cursive;
+	font-family: $font-family1;
 	font-style: italic;
 	font-weight: bolder;
 	text-transform: uppercase;
 }
 #subscribe{
 	display: block;
-	color: #880e45;
+	color: $main-color;
 	text-align: center;
-	font-family: courier;
+	font-family: $font-family2;
 	margin: 5px;
 }
 span{
-	color: #880e45;
+	color: $main-color;
 }
 #container{
 	display: flex;
@@ -31,15 +37,16 @@ span{
 	height: 70vh;
 	width: 75vw;
 }
+#container{
 #item{
 	height: 65vh;
 	width: 40vw;
-	background-color: #edbef0;
+	background-color: $background-color;
 	text-align: center;
 	font-size: 1.5em;
 	line-height: 3;
-	color: #c51162;
-	font-family: courier;
+	color: $other-color;
+	font-family: $font-family2;
 	font-style: italic;
 }
 p{
@@ -50,6 +57,7 @@ form{
 	padding-left: 3%;
 	height: 63vh;
 	width: 40vw;
+}
 }
 @media screen and (min-width: 700px){
 	form{padding-top: 45px;
@@ -75,26 +83,26 @@ input{
 	margin-top: 1%;
 	margin-bottom: 5%;
 	padding: 2%;
-	border: 2px solid #512e5f;
+	border: 2px solid $border-color;
 	border-radius: 50px;
 	transition: border 0.5s, padding 0.5s;
 	width:80%;
 }
 input:focus {
-	border: 4px solid #c51162;
+	border: 4px solid $other-color;
 	padding: 3%;
 }
 button{
-	border: 2px solid #512e5f;
+	border: 2px solid $border-color;
 	border-radius: 50px;
 	transition: background-color 0.5s, padding 0.5s;
 	width:85%;
-	background-color: #edbef0; 
+	background-color: $background-color; 
 	margin-top: 5%;
 	padding: 2%;
 }
 button:hover{
-	background-color: #c51162;
+	background-color: $other-color;
 	padding: 4%;
 }
 div#general{
