@@ -2,26 +2,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title> CSS Box Model Illustration</title>
+	<title> VGG Virtual Internship Registration Form</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="box.css">
 </head>
 <body>
 	<h1>VGG Virtual Internship</h1>
-	<p id="subscribe">Welcome!Subscribe to our newsletter below </p>
+	<p id="subscribe">Welcome!Register below </p>
 	<div id="container">
-	<div id="item"><p>Subscribe <br>To <br>Our<br> Newsletter<p></div>
-	<form>
+	<div id="item"><p>Would you like to join us?<br> Register Here! <p></div>
+	<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
 		<div id="general">
 		<span>First Name<span><br>
-		<input type="text" name="firstname" placeholder="Enter your first name"><br>
+		<input type="text" name="firstname" placeholder="Enter your first name" ><br>
 		Last Name<br>
 		<input type="text" name="lastname" placeholder="Enter your last name"><br>
 		Email<br>
 		<input type="email" name="email" placeholder="Enter your email"><br>
+		Password<br>
+		<input type="password" name="password" value="password" placeholder="Enter your password"><br>
+		Confirm Password<br>
+		<input type="password" name="confirmpassword" value="confirmpassword" placeholder="Confirm password">
 		<button>SUBMIT</button>
 		</div>
 	</form>
 	</div>
+
+	<script>
+function validateForm() {
+  var x = document.forms["myForm"]["firstname"].value;
+  if (x == "") {
+    alert("Please provide your firstname");
+    return false;
+  }
+   var x = document.forms["myForm"]["lastname"].value;
+  if (x == "") {
+    alert("Please provide your lastname");
+    return false;
+  }
+   var x = document.forms["myForm"]["email"].value;
+  if (x == "") {
+    alert("Please provide your email");
+    return false;
+  }
+   var x = document.forms["myForm"]["password"].value;
+  if (x == "") {
+    alert("Please enter your password");
+    return false;
+  }
+   var x = document.forms["myForm"]["confirmpassword"].value;
+  if (x == "") {
+    alert("Please confirm your password");
+    return false;
+  }
+}
+	</script>
 </body>
 </html>
